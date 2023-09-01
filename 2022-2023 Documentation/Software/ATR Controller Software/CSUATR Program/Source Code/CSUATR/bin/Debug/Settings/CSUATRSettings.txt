@@ -1,0 +1,75 @@
+Project Settings go in here. Only edit values, not parameter names
+
+---------- Positioning Parameters ----------
+Polar Engaged: False
+Vertical Engaged: False
+Horizontal Engaged: False
+Depth Engaged: False
+Azimuth Engaged: False
+Elevation Engaged: False
+
+Move-To Polar: 0
+Move-To Vertical: 0
+Move-To Horizontal: 0
+Move-To Depth: 0
+Move-To Azimuth: 0
+Move-To Elevation: 0
+
+Move-By Polar: 0
+Move-By Vertical: 0
+Move-By Horizontal: 0
+Move-By Depth: 0
+Move-By Azimuth: 0
+Move-By Elevation: 0
+
+---------- Measurement Parameters ----------
+Set-To Source Power: -1
+Set-To Start Frequency: 2000
+Set-To Stop Frequency: 6000
+Set-To # Sweep Points: 1000
+Set-To # Averaging Points: 10
+
+---------- Scan Settings Parameters ----------
+Polar Unlocked: False
+Vertical Unlocked: False
+Horizontal Unlocked: False
+Depth Unlocked: False
+Azimuth Unlocked: False
+Elevation Unlocked: False
+
+Polar Lower Limit: -180
+Vertical Lower Limit: -105
+Horizontal Lower Limit: -105
+Depth Lower Limit: -140
+Azimuth Lower Limit: 0
+Elevation Lower Limit: -180
+
+Polar Upper Limit: 180
+Vertical Upper Limit: 105
+Horizontal Upper Limit: 105
+Depth Upper Limit: 140
+Azimuth Upper Limit: 180
+Elevation Upper Limit: 180
+
+Polar Resolution: 0.01
+Vertical Resolution: 0.01
+Horizontal Resolution: 0.01
+Depth Resolution: 0.01
+Azimuth Resolution: 0.01
+Elevation Resolution: 0.01
+
+Frequency Lower Limit: 2
+Frequency Upper Limit: 6000
+# Sweep Points: 1000
+
+Source Power: -1
+# Averaging Points: 10
+
+Scan Type: Single
+
+---------- Other Parameters ----------
+Arduino Port: COM#
+
+PNA Mode: S21
+
+---------- Any additional comments can be added below ----------

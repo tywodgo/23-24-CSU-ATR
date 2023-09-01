@@ -1,0 +1,25 @@
+Horizontal Unlocked: False
+Vertical Unlocked: False
+Depth Unlocked: False
+Azimuth Unlocked: False
+Elevation Unlocked: False
+Polarization Unlocked: False
+Horizontal Lower Limit: -105
+Vertical Lower Limit: -105
+Depth Lower Limit: -140
+Azimuth Lower Limit: 0
+Elevation Lower Limit: -180
+Polarization Lower Limit: -180
+Horizontal Upper Limit: 105
+Vertical Upper Limit: 105
+Depth Upper Limit: 140
+Azimuth Upper Limit: 180
+Elevation Upper Limit: 180
+Polarization Upper Limit: 180
+Horizontal Resolution: 1
+Vertical Resolution: 1
+Depth Resolution: 1
+Azimuth Resolution: 1
+Elevation Resolution: 1
+Polarization Resolution: 1
+Scan Type: Single

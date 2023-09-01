@@ -1,0 +1,16 @@
+Connection Settings Folder: Settings
+Connection Settings File: connection.txt
+Positioner Settings Folder: Settings
+Positioner Settings File: positioner.txt
+Measurement Settings Folder: Settings
+Measurement Settings File: measurement.txt
+Scan Settings Folder: Settings
+Scan Settings File: scan.txt
+Data Folder: ATRReadings
+Data File: FuncEval_AzimuthBig.txt
+Motor Folder: Settings
+Motor File: motors.txt
+Position Folder: Settings
+Position File: position.txt
+Addresses Folder: Settings
+Addresses File: addresses.txt

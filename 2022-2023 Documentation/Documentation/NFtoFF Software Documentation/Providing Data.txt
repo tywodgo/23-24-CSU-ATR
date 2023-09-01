@@ -1,0 +1,40 @@
+**IMPORTANT NOTE**:  As of now (2023), the only type of ATR scan that can be transformed is a rectangular scan.
+ 
+Providing Data:
+	Data must be placed in the “Data” folder alongside this software 
+	either in a .xlxs or .txt format. See "Simulated Data" and "Measured Data" 
+	for more information.
+ 
+Simulated Data:
+	The simulated data must be stored in an .xlsx file as seen in Simulated Data Storage.
+	This is because the simulated data used throughout the development of NF->FF
+	was exported from WIPL-D antenna simulations.
+ 
+Simulated Data Storage:
+
+	Format: .xlxs
+	X,Y,Z: Positional Coordinates	[m]
+	E: Electric-field		[V/m]
+	H: Magnetic-field		[A/m]
+	real: Real Component
+	imag: Imaginary Component
+ 
+---------------------------------------------------------------------------------------------------------------------------
+| X | Y | Z | Ex-real | Ex-imag | Ey-real | Ey-imag | Ez-real | Ez-imag | Hx-imag | Hy-real | Hy-imag | Hz-real | Hz-imag |
+---------------------------------------------------------------------------------------------------------------------------
+| . | . | . |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+| . | . | . |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+| . | . | . |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+---------------------------------------------------------------------------------------------------------------------------
+|   |   |   |         |         |         |         |         |         |         |         |         |         |         |
+ 
+ 
+Measured Data:
+	Measured data is data obtained from the PNA in the ATR. It must be stored
+	as a .txt and nothing about the file is manipulated. This should be a raw
+	text file produced by the PNA in the EM-Lab.
+ 
+Measured Data Storage:
+	Format: .txt
+	As previously said, the measured data should be an unmanipulated .txt
+	file placed in the "Data" directory.

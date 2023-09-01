@@ -1,0 +1,15 @@
+>  0  1  2  1  2
+f=10e9
+c=300e6
+lambda=(c/f)*10^3
+w=lambda/4
+l=w
+h=0.5
+wD=30
+lD=wD
+stripWid=5
+r=stripWid/4
+SL_close=stripWid/2
+SL_far=lambda*3+w
+wD_far=SL_far+lambda/2
+p1=SL_far-r*2

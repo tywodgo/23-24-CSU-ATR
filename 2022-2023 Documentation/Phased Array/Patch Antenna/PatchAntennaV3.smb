@@ -1,0 +1,13 @@
+>  0  1  2  1  2
+freq=10
+f=freq*10^9
+c0=300e6
+lambda=(c0/f)*10^3
+w=lambda/2
+wh=w/2
+lh=wh
+wD=lambda
+lD=wD
+h=0.5
+p1=w/4
+r=0.5

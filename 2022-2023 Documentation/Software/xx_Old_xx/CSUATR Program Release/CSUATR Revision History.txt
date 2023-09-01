@@ -1,0 +1,13 @@
+CSUATR Revision History
+
+Date, Revision
+2019-9-20, First working version of program
+2019-9-24, GUI and program structure majorly reworked
+2019-10-23, Positioner mostly finished
+2019-11-5, Network analyzer and positioner code finished
+2019-11-15, Plotter code finished
+2019-11-20, 1D and 2D scan finished, ability to remove point or clear dataset, fixed bugs
+2019-12-4, Fixed bugs with measurements and plotting, finished the help page
+2019-12-7, Fixed data-saving bug
+2020-1-12, Reconstructed GUI and backend code
+2020-1-30, Final Intended Changes

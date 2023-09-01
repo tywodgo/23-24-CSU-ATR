@@ -1,0 +1,5 @@
+C:\Users\Jason\Documents\SeniorDesign\csuatr\CSUATR\CSUATRv3\obj\Debug\CSUATRv3.csprojAssemblyReference.cache
+C:\Users\Jason\Documents\SeniorDesign\csuatr\CSUATR\CSUATRv3\obj\Debug\MainWindow.g.cs
+C:\Users\Jason\Documents\SeniorDesign\csuatr\CSUATR\CSUATRv3\obj\Debug\App.g.cs
+C:\Users\Jason\Documents\SeniorDesign\csuatr\CSUATR\CSUATRv3\obj\Debug\CSUATRv3_MarkupCompile.cache
+C:\Users\Jason\Documents\SeniorDesign\csuatr\CSUATR\CSUATRv3\obj\Debug\CSUATRv3_MarkupCompile.lref

@@ -1,0 +1,36 @@
+elevation
+spherical polarization -> elevation
+4 seconds = 180 degrees
+freq = 30.64 Hz
+
+
+azimuth
+azimuth motor -> azimuth
+//59 seconds = 180 degrees
+//freq = 122.55 Hz
+14.63 seconds = 180 degrees
+freq = 490.20 Hz
+
+
+horizontal
+x-axis motor -> horizontal
+40 seconds = 20.25 inches
+freq = 490.20 Hz
+
+
+vertical
+y-axis motor -> vertical
+10 seconds = 30.63 inches
+freq = 490.20 Hz
+
+
+depth
+elevation motor -> depth
+40 seconds = 13.75 inches
+freq = 490.20 Hz
+
+
+polarization
+planar polarization -> polarization
+__ seconds = __ inches
+freq = __ Hz

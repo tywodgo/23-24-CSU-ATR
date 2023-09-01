@@ -1,0 +1,62 @@
+Program Design:
+ 
+**NOTE: NF->FF is not designed with a lot of error checking. You have been warned!!**
+ 
+Interface (main file):
+	The main file of the NF->FF software. Its purpose is to direct user commands
+	through the different menu options of NF->FF. It also contains the TSarr, SIMarr,
+	and SCANarr. Each of these are object arrays that store different data sets: 
+	including transformed data (TransformSweep object), simulated data (SimHandler object) 
+	and ATR data (ScanHandler object). It uses a basic switch statement to direct user input. 
+ 
+SimHandler (object):
+	Interprets simulated data from a .xlxs file. The reason why there are two different
+	objects for simulated and scanned data is because the way in which the rectangular 
+	mesh is measured is different between WIPL-D and the ATR. Because of this, the order 
+	in which the data is parsed is different.
+ 
+ScanHandler (object):
+	Interprets ATR scanned data (rectangular scans only) from a .txt file produced by the PNA. 
+ 
+TransformObject (object):
+	This is where the magic happens. This object is designed to take the discretized 
+	surface integral of the rectangular mesh data and compute a single far-field point. 
+	This object is iterated through by the TransformSweep object to produce a far-field mesh. 
+	This file isn’t really that large, and the transform itself isn’t really that 
+	computationally difficult. However, because this object is swept, depending on 
+	the resolution of the imputed data, the transform can take a very long time.
+ 
+TransformSweep (object):
+	This object produces far-field data by repeatedly computing far-field points via
+	the TransformObject. Additionally, it is also the object that takes into account 
+	the polynomial regression line fitting algorithm, which is useful when the transformed 
+	mesh is too misshapen.
+ 
+Plotter (object):
+	This object plots (duh). It can plot heatmaps (near-field only), polar, and cartesian plots. 
+	Additionally, there are a couple of unused plotters commented out called “Vector Field Plotters”. 
+	The purpose of these plots was to visually see if the r’ and ir vectors from the transformation
+	surface integral were being computed accurately. They are not currently functional.
+ 
+FunctionContainer (object):
+	Contains miscellaneous functions to aid in computation, file interpretation, and UI.
+	It’s pretty much used as a dumping group for functions that take up a lot of room in 
+	other object files.
+ 
+factorLIN (data):
+	This is data that is produced by all three data objects: transformed, simulated, 
+	and measured. It’s the linear factor for the surface of the field strength. The reason
+	why it’s not referred to as gain is because it doesn’t exactly equal the gain of the
+	antenna because the effective antenna power is currently unknown. However, this factor
+	is linearly proportional to the gain because the effective antenna power is constant.
+ 
+	Note that the linear factor of a transformed field is multiplied by 5 in the TransformObject
+	(line 124). The reason for this is that measuring only one rectangular surface with respect
+	to the antenna only measures 1/6 of the total surface surrounding the antenna. The reason it’s 
+	only being multiplied by 5 (we think) is because the antenna radiation that propagates behind 
+	the antenna is relatively insignificant. This is at least true with respect to horn antennas, 
+	which was the type of antenna measured throughout this process.
+ 
+factorLOG (data):
+	This is the logarithmic equivalent of the linear factor, and is more in line with 
+	representing the field radiation at a decibel scale. 

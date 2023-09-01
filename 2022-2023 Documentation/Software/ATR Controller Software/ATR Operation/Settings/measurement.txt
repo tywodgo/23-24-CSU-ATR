@@ -1,0 +1,7 @@
+S Parameter: S21
+Source Power: -1
+Start Frequency: 2000
+Stop Frequency: 6000
+IF Bandwidth: 2
+Sweep Points: 1000
+Average Points: 10

@@ -1,0 +1,39 @@
+[FREQUENCY DEPENDENCE]
+FN=0
+FNS=0
+MDF=0
+FD=0
+NPR=16
+RL=0
+[READ-ONLY]
+RO=0
+[STATUS]
+FGN=0
+PMC=0
+PEC=0
+[PERIODIC BOUNDARY]
+PB=0
+[RCS]
+TYPE=0
+[SAVE CURRENTS]
+CONDITION=0
+FORMAT=s
+[AWI]
+FQ=1
+FI=361
+TE=181
+N1=2
+N2=2
+N3=2
+[Generators]
+Number=1
+Voltages=100 0|
+[Graph]
+RA_Left=-16
+RA_Top=-8
+RA_Width=1936
+RA_Height=1066
+NF_Left=-16
+NF_Top=-8
+NF_Width=1936
+NF_Height=1066

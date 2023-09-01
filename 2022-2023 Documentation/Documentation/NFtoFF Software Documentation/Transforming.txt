@@ -1,0 +1,22 @@
+﻿About Transforming:
+	Transforming a near-field radiation pattern into a far-field 
+	radiation pattern is a complex process. It involves taking an
+	entire surface integral of the near-field rectangular mesh, 
+	and computing a single far-field point. This process is done
+	repeatedly to produce a far-field mesh. 
+ 
+	The continuous version of the integral is as shown below:
+ 
+	EFF(r) = e^(-jk0r)/(4πr)∯{n’×[∇’×ENF(r’)]+jk0[n’× ENF(r’)]×ir}e^(jk0ir⋅r’)ds’
+ 
+	The discretized version is as shown below: 
+ 
+	EFF[r] = e^(-jk0r)/(4πr)Σ{n'×curl(ENF[r']) + jk0[n' ENF[r']]×ir}e^(jk0ir⋅r’)*(area of scan surface)
+ 
+How to Transform:
+	Simply select "t" from the list of options on the menu screen. Follow
+	through with the prompts, and it will save the transform in your MATLAB
+	Workspace. If you want to save the transformed data, you need to export it
+	from your workspace.
+ 
+**For more information, visit the ATR 2022-2023 final report or notebooks.**

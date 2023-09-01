@@ -1,0 +1,6 @@
+About NF->FF:
+	The NF->FF software is designed to transform either measured or 
+	simulated electromagnetic (EM) radiation patterns to a user-specified 
+	far-field EM radiation pattern.
+ 
+**For more information, visit the ATR 2022-2023 final report or notebooks.**
