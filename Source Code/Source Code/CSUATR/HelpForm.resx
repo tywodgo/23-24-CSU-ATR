@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Connect/Disconnect
+ - Provides user ability to establish connection with a network analyzer
+ - This may take a couple seconds to connect once queued
+ - Instrument address must be properly defined in CSUATRMeta.txt
+Mode
+ - Sets the S-Parameters for the network analyzer
+ - Must change value to effect network analyzer</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Connect/Disconnect
+ - Provides user ability to establish connection with arduino controller
+ - Connects only via USB
+Port
+ - Sets the port where the controller can be found
+ - Current recognized ports are listed in dropdown list
+ - If device's port does not appear in list, go to 'File' -&gt; 'Rescan Ports'</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Move-To
+ - Commands enabled motors to move to specified position
+ - Motors will proceed to move only one at a time
+Move-By
+ - Commands enabled motors to move by specified amount
+ - Motors will proceed to move only one at a time
+Stop
+ - Emergency stop for all motors
+ - Does not account for its new position, hence will accumulate
+    error is used
+Home
+ - Currently zeros out the current position for all motors
+ - It is important to do this before running scans</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Measure
+ - Triggers a sweep on the network analyzer
+ - Network analyzer will remain unresponsive until the sweep finishes
+   and data is received
+Set-To
+ - Set current network analyzer parameters
+</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Source Antenna (SA)
+Antenna Under Test (AUT)
+
+Polarization
+ - Rotates in XY plane
+ - Determines polarity of source signal coming
+    from the SA
+Vertical
+ - Y axis position
+ - SA's Y position relative to the AUT
+Horizontal
+ - X axis position
+ - SA's X position relative to the AUT
+Depth
+ - Z axis position
+ - SA's Z position relative to the AUT
+Azimuth
+ - Rotates in XZ plane
+ - Directional angle between SA and AUT
+Elevation
+ - Rotates in YZ plane
+ - Directional angle between SA and AUT</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Source Power
+ - Amount of attenuation of the max power
+Start Frequency
+ - Lowest frequency that a sweep will cover
+Stop Frequency
+ - Highest frequency that a sweep will cover
+# of Sweep Points
+ - Total number of frequencies measured
+   during one sweep
+# of Averaging Points
+ - The number of times a single-frequency
+   measurement is taken before averaging
+   the measurements for that frequency
+Mode
+ - S-Parameters (S11, S12, S21, S22)</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Each measurement adds a single data point to the
+dataset.
+
+To save data, go to 'File' -&gt; 'Save Data'
+To load data, go to 'File' -&gt; 'Load Data'
+ - Beware that this will overwrite the current dataset
+To remove the last data point or clear the dataset,
+go to the 'Data' tab
+</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Start
+ - Start a new scan
+ - This will setup the network analyzer parameters
+    and 'home' the motors
+ - Positioner and Measurement will not be available
+    while the scan is 'in progress' or 'unpaused'
+ - This does not effect the current dataset
+ - Data collected during scan will be appended to
+    current dataset
+Pause
+ - Will ignore the current action and refuse to command
+    further actions until Resumed
+ - Does not call 'Stop' function to motors
+Resume
+ - Continues scan at the step where it last left off
+Cancel
+ - Effectively pauses scan and does not let user to continue
+    without restarting a new scan
+Scan Type
+ - Single - This will scan over the one motor only
+              - User should leave only one motor unlocked
+ - Double - This will scan over two motors
+                - User should leave only two motors unlocked</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>This program allows users to configure settings for:
+ - Network Analyzer Mode
+ - Arduino Port
+ - Positioning Parameters
+ - Measurement Parameters
+ - Scan Settings Parameters
+Users can modify these settings in the program and
+then save them:
+ - 'File' -&gt; 'Save Settings'
+Users can change their current settings file:
+ - 'File' -&gt; 'Change Settings Location'
+Users can load data parameters by pressing 'Reload
+Settings'</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Welcome to the CSU Antenna Test Range Program!
+
+When executing this program for the first time, two
+files are created:
+ - Meta
+ - Settings
+The Meta folder and filename inside cannot change
+or the progarm will recreate the file with the correct
+filename with default parameters
+
+The Meta folder is also restricted from any settings
+or data that a user wants to store
+
+This program is only able to edit the contents of the
+folders and files inside the folder of the executable,
+thus, if you did not place this is its own separate
+folder, please do so now and restart the program
+</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Visual configures how current measurement
+data is interpretted and viewed by the user
+
+Mode
+ - Selects only data points with specified S-Parameters
+Auto-Scale
+ - Auto scales to display to show all data points
+ - The user is able to move the display with their mouse,
+    zoom with their mouse scroll, and box-zoom with
+    CTRL + mouse drag
+Line
+ - Select any combination of Real, Imaginary, Magnitude,
+    or Phase data to be displayed simutaneously
+ - Cannot display at same time as Scatter
+Scatter
+ - Display Real and Imaginary (top + right axes) and
+    Magnitude and Phase (bottom + left axes)
+ - Cannot display at same time as Line
+Variable
+ - Select which variable to make 'independant'
+ - Set constants for all other contraints to display
+    desired dataset
+ - Point index will only display with variable frequency
+ - Point index allows user to iterate over each individual
+    measurement and autofill contants at the same time</value>
+  </data>
+</root>

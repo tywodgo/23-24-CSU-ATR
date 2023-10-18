@@ -1,0 +1,6 @@
+Horizontal: -6.52
+Vertical: -0.0100000000000193
+Depth: 0
+Azimuth: 0
+Elevation: 0
+Polarization: -9.9475983006414E-13

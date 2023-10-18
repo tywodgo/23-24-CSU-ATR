@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4FDE4C3-23EA-49F6-80E6-57F7DEA21632}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSUATR</RootNamespace>
+    <AssemblyName>CSUATR</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AgN99xx_NA_A_06_23">
+      <HintPath>..\AgN99xx_NA_A_06_23.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa, Version=5.11.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ivi.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa.Interop, Version=5.11.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_32\Ivi.Visa.Interop\5.11.0.0__a128c98f1d7717c1\Ivi.Visa.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.2.0.0\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.WindowsForms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=245eacd6b5d2d338, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.WindowsForms.2.0.0\lib\net45\OxyPlot.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ScottPlot, Version=3.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ScottPlot.3.1.6\lib\net45\ScottPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arduino.cs" />
+    <Compile Include="ArduinoConnectionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSettingsLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSettingsLocationForm.Designer.cs">
+      <DependentUpon>ChangeSettingsLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearDatasetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearDatasetForm.Designer.cs">
+      <DependentUpon>ClearDatasetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManager.cs" />
+    <Compile Include="ExitApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitApplicationForm.Designer.cs">
+      <DependentUpon>ExitApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FieldFox.cs" />
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDataForm.Designer.cs">
+      <DependentUpon>LoadDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasurementGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkAnalyzer.cs" />
+    <Compile Include="OutputGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NAConnectionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plotter.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Positioner.cs" />
+    <Compile Include="PositioningGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveDataForm.Designer.cs">
+      <DependentUpon>SaveDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveSettingsForm.Designer.cs">
+      <DependentUpon>SaveSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scanner.cs" />
+    <Compile Include="ScanSettingsGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="ChangeSettingsLocationForm.resx">
+      <DependentUpon>ChangeSettingsLocationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearDatasetForm.resx">
+      <DependentUpon>ClearDatasetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitApplicationForm.resx">
+      <DependentUpon>ExitApplicationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDataForm.resx">
+      <DependentUpon>LoadDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SaveDataForm.resx">
+      <DependentUpon>SaveDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveSettingsForm.resx">
+      <DependentUpon>SaveSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

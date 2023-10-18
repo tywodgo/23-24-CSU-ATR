@@ -1,0 +1,11 @@
+Project Meta Parameters go in here. Only edit values, not parameter names
+
+Settings Folder: Settings
+Settings File: CSUATRSettings.txt
+
+Data Folder: Data
+Data File: data.dat
+
+Instrument Address: TCPIP0::129.82.226.75::inst0::INSTR
+
+---------- Any additional comments can be added below ----------
